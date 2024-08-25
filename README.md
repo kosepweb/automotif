@@ -376,7 +376,6 @@
                     <img src="mandiri.png.crdownload" alt="Mandiri Logo">
                     <img src="oto.jpeg" alt="Oto Logo">
                 </div>
-            </div>
         </section>
 
         <!-- Contact Section -->
