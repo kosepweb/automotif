@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Russo One', sans-serif;
             margin: 0;
             padding: 0;
             background: #f9f9f9;
@@ -174,21 +174,13 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
-        }
-
-        .testimonial p {
-            font-style: italic;
-            color: #666;
-        }
-
-        .testimonial .author-logos {
             display: flex;
-            gap: 15px;
-            margin-top: 15px;
+            justify-content: center;
         }
 
-        .testimonial .author-logos img {
-            height: 30px;
+        .testimonial img {
+            height: 60px;
+            margin: 0 10px;
         }
 
         .contact {
@@ -367,10 +359,13 @@
 
             .testimonial {
                 padding: 20px;
+                flex-direction: column;
+                align-items: center;
             }
 
-            .testimonial .author-logos img {
-                height: 20px;
+            .testimonial img {
+                height: 40px;
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -392,7 +387,7 @@
 
     <div class="container">
         <section id="about" class="about">
-            <img src="foto3.jpg" alt="Foto Profil">
+            <img src="sales.jpg" alt="Foto Profil">
             <div>
                 <h2>Tentang Kami</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula urna sit amet magna
@@ -419,38 +414,32 @@
         <section id="gallery">
             <h2>Galeri</h2>
             <div class="gallery">
-                <img src="mobil1.jpg" alt="Mobil 1" onclick="openGallery(this)">
-                <img src="mobil2.jpg" alt="Mobil 2" onclick="openGallery(this)">
-                <img src="mobil3.jpg" alt="Mobil 3" onclick="openGallery(this)">
+                <img src="Zenix-Silver-p-1.png" alt="All New Toyota Zenix" onclick="openGallery(this)">
+                <img src="hiace-premio.png" alt=" Hiace Premio " onclick="openGallery(this)">
+                <img src="main_banner_toyota_new_fortuner_Attitude_Black.png" alt="New Fortuner" onclick="openGallery(this)">
                 <!-- Tambahkan gambar lain sesuai kebutuhan -->
             </div>
         </section>
 
         <section id="testimonials" class="testimonials">
             <div class="testimonial">
-                <p>"Layanan yang sangat profesional! Saya sangat puas dengan pembelian mobil saya."</p>
-                <div class="author-logos">
-                    <img src="logo1.png" alt="Logo Penulis">
-                </div>
+                <img src="oto.jpeg" alt="Logo Kerjasama 1">
+                <img src="adira.png" alt="Logo Kerjasama 2">
+                <img src="mandiri.png.crdownload" alt="Logo Kerjasama 2">
+                <img src="bfi.jpeg" alt="Logo Kerjasama 2">
+                <!-- Tambahkan logo kerjasama lain sesuai kebutuhan -->
             </div>
-            <div class="testimonial">
-                <p>"Prosesnya sangat mudah dan cepat. Terima kasih atas bantuannya!"</p>
-                <div class="author-logos">
-                    <img src="logo2.png" alt="Logo Penulis">
-                </div>
-            </div>
-            <!-- Tambahkan testimonial lain sesuai kebutuhan -->
         </section>
 
         <section id="contact" class="contact">
             <h2>Hubungi Kami</h2>
             <p>Jika Anda memiliki pertanyaan atau ingin menjadwalkan konsultasi, silakan hubungi kami.</p>
             <div class="social">
-                <a href="https://wa.me/1234567890" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
-                <a href="https://instagram.com/yourprofile" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/+6285674445" target="_blank"><img src="wa.png" alt="WhatsApp"></a>
+                <a href="https://instagram.com/andiirfanmaulana" target="_blank"><img src="ig.png.crdownload" alt="Instagram"></a>
             </div>
-            <p>Alamat: Jl. Contoh No.123, Jakarta</p>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+            <p>Alamat: Jl. Tamalanrea BTP, Kota Makassar </p>
+            <iframe class="map" src="https://www.google.com/maps/place/Jl.+Kesenangan+3,+Tamalanrea,+Kec.+Tamalanrea,+Kota+Makassar,+Sulawesi+Selatan+90245/@-5.1321812,119.4988383,17z/data=!3m1!4b1!4m6!3m5!1s0x2dbefcb1d60774cb:0x9e04f396881d124a!8m2!3d-5.1321812!4d119.5014132!16s%2Fg%2F1hm64_pkm?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" allowfullscreen></iframe>
         </section>
     </div>
 
