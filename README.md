@@ -373,102 +373,81 @@
 
 <body>
     <header>
-        <h1>Profil Sales Mobil</h1>
-        <p>Andi Irfan Maulana - Penawaran Terbaik Untuk Anda</p>
+        <h1>Andi Irfan Maulana</h1>
+        <p>Professional Car Sales Consultant</p>
     </header>
 
     <nav>
-        <a href="#about">Tentang Kami</a>
-        <a href="#services">Layanan</a>
-        <a href="#gallery">Galeri</a>
-        <a href="#testimonials">Testimoni</a>
-        <a href="#contact">Hubungi Kami</a>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
         <section id="about" class="about">
-            <img src="sales.jpg" alt="Foto Profil">
+            <img src="sales.jpg" alt="Profile Picture">
             <div>
-                <h2>Tentang Kami</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula urna sit amet magna
-                    pretium, a commodo justo dictum. Aliquam erat volutpat. Mauris ac neque at ante cursus blandit
-                    non a nunc.</p>
+                <h2>About Me</h2>
+                <p>Hello, I'm Andi Irfan Maulana, a professional car sales consultant with over 10 years of experience in
+                    the industry. I specialize in helping customers find the perfect vehicle that meets their needs and
+                    budget.</p>
             </div>
         </section>
 
         <section id="services" class="services">
-            <div class="service consult" style="background-image: url('sales2.jpg');">
-                <h3>Konsultasi</h3>
-                <p>Kami menyediakan konsultasi yang mendalam untuk membantu Anda menemukan mobil yang tepat.</p>
+            <div class="service consult">
+                <h3>Consultation</h3>
+                <p>I offer personalized consultation to help you choose the right car that fits your lifestyle.</p>
             </div>
-            <div class="service offer" style="background-image: url('penawaran.jpg');">
-                <h3>Penawaran Terbaik</h3>
-                <p>Dapatkan penawaran terbaik untuk mobil baru dan bekas dari kami.</p>
+            <div class="service offer">
+                <h3>Special Offers</h3>
+                <p>Get access to exclusive deals and promotions on a wide range of vehicles.</p>
             </div>
-            <div class="service test-drive" style="background-image: url('tes.jpg');">
+            <div class="service test-drive">
                 <h3>Test Drive</h3>
-                <p>Jadwalkan test drive dan rasakan pengalaman berkendara yang sebenarnya.</p>
+                <p>Schedule a test drive to experience the car before making a decision.</p>
             </div>
         </section>
 
-        <section id="gallery">
-            <h2>Galeri</h2>
-            <div class="gallery">
-                <img src="Zenix-Silver-p-1.png" alt="All New Toyota Zenix" onclick="openGallery(this)">
-                <img src="hiace-premio.png" alt=" Hiace Premio " onclick="openGallery(this)">
-                <img src="main_banner_toyota_new_fortuner_Attitude_Black.png" alt="New Fortuner" onclick="openGallery(this)">
-                <!-- Tambahkan gambar lain sesuai kebutuhan -->
-            </div>
+        <section id="gallery" class="gallery">
+            <img src="Zenix-Silver-p-1.png" alt="Gallery Image 1">
+            <img src="hiace-premio.png" alt="Gallery Image 2">
+            <img src="main_banner_toyota_new_fortuner_Attitude_Black.png" alt="Gallery Image 3">
         </section>
 
         <section id="testimonials" class="testimonials">
             <div class="testimonial">
-                <img src="oto.jpeg" alt="Logo Kerjasama 1">
-                <img src="adira.png" alt="Logo Kerjasama 2">
-                <img src="mandiri.png.crdownload" alt="Logo Kerjasama 2">
-                <img src="bfi.jpeg" alt="Logo Kerjasama 2">
-                <!-- Tambahkan logo kerjasama lain sesuai kebutuhan -->
+                <img src="customer1.jpg" alt="Customer Photo">
+                <p>"Andi is a fantastic consultant. He helped me find the perfect car within my budget. Highly
+                    recommended!" - John Doe</p>
+            </div>
+            <div class="testimonial">
+                <img src="customer2.jpg" alt="Customer Photo">
+                <p>"I had a great experience working with Andi. He is very knowledgeable and patient." - Jane Smith</p>
             </div>
         </section>
 
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.236567848016!2d115.21516501420998!3d-8.67045809093564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd239d58a14d9f7%3A0xc0f87110a2295c7b!2sToyota%20Astra%20Motor%20Sanur!5e0!3m2!1sen!2sid!4v1613966484090!5m2!1sen!2sid"
+            allowfullscreen="" loading="lazy"></iframe>
+
         <section id="contact" class="contact">
-            <h2>Hubungi Kami</h2>
-            <p>Jika Anda memiliki pertanyaan atau ingin menjadwalkan konsultasi, silakan hubungi kami.</p>
+            <h2>Contact Me</h2>
+            <p>Have any questions or need further assistance? Feel free to reach out to me!</p>
             <div class="social">
-                <a href="https://wa.me/+6285674445" target="_blank"><img src="wa.png" alt="WhatsApp"></a>
-                <a href="https://instagram.com/andiirfanmaulana" target="_blank"><img src="ig.png.crdownload" alt="Instagram"></a>
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
             </div>
-            <p>Alamat: Jl. Tamalanrea BTP, Kota Makassar </p>
-            <iframe class="map" src="https://www.google.com/maps/place/Jl.+Kesenangan+3,+Tamalanrea,+Kec.+Tamalanrea,+Kota+Makassar,+Sulawesi+Selatan+90245/@-5.1321812,119.4988383,17z/data=!3m1!4b1!4m6!3m5!1s0x2dbefcb1d60774cb:0x9e04f396881d124a!8m2!3d-5.1321812!4d119.5014132!16s%2Fg%2F1hm64_pkm?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" allowfullscreen></iframe>
+            <p>Email: andi.sales@example.com | Phone: +62 812-3456-7890</p>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Andi Irfan Maulana. Semua hak cipta dilindungi.</p>
+        <p>&copy; 2023 Andi Irfan Maulana. All Rights Reserved.</p>
     </footer>
-
-    <!-- Gallery Modal -->
-    <div id="gallery-modal" class="gallery-item">
-        <span class="close" onclick="closeGallery()">&times;</span>
-        <img id="modal-img" src="" alt="Gallery Item">
-        <div class="caption" id="modal-caption"></div>
-    </div>
-
-    <script>
-        function openGallery(img) {
-            var modal = document.getElementById('gallery-modal');
-            var modalImg = document.getElementById('modal-img');
-            var captionText = document.getElementById('modal-caption');
-            modal.style.display = 'flex';
-            modalImg.src = img.src;
-            captionText.innerHTML = img.alt;
-        }
-
-        function closeGallery() {
-            var modal = document.getElementById('gallery-modal');
-            modal.style.display = 'none';
-        }
-    </script>
 </body>
 
 </html>
