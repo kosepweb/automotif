@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -301,7 +303,9 @@
             }
         }
     </style>
+</head>
 
+<body>
     <!-- Background Music -->
     <audio autoplay loop>
         <source src="semangat.mp3" type="audio/mpeg">
@@ -422,7 +426,3 @@
         function closeGallery() {
             document.getElementById('gallery-item').style.display = 'none';
         }
-    </script>
-</body>
-
-</html>
