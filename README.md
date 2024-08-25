@@ -301,9 +301,7 @@
             }
         }
     </style>
-</head>
 
-<body>
     <!-- Background Music -->
     <audio autoplay loop>
         <source src="semangat.mp3" type="audio/mpeg">
