@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -289,139 +288,198 @@
             cursor: pointer;
         }
 
+        /* Media Queries for Mobile Devices */
         @media (max-width: 768px) {
+            header {
+                padding: 100px 20px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            nav {
+                padding: 10px;
+                font-size: 1em;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
             .about {
                 flex-direction: column;
+                text-align: center;
             }
 
             .about img {
+                width: 100%;
+                max-width: 100%;
                 margin-bottom: 20px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .service {
+                height: auto;
+                padding: 20px;
             }
 
             .gallery {
                 flex-direction: column;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            .map {
+                height: 300px;
+            }
+
+            .contact h2 {
+                font-size: 2em;
+            }
+
+            .contact p {
+                font-size: 1em;
+            }
+
+            .contact .social a {
+                margin: 0 5px;
+            }
+
+            .contact .social img {
+                height: 30px;
+            }
+
+            .testimonial {
+                padding: 20px;
+            }
+
+            .testimonial .author-logos img {
+                height: 20px;
             }
         }
     </style>
 </head>
 
 <body>
-    <!-- Background Music -->
-    <audio autoplay loop>
-        <source src="semangat.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <header>
+        <h1>Profil Sales Mobil</h1>
+        <p>Andi Irfan Maulana - Penawaran Terbaik Untuk Anda</p>
+    </header>
 
-    <!-- Navigation -->
     <nav>
-        <a href="#about">Tentang Saya</a>
+        <a href="#about">Tentang Kami</a>
         <a href="#services">Layanan</a>
         <a href="#gallery">Galeri</a>
         <a href="#testimonials">Testimoni</a>
-        <a href="#contact">Hubungi Saya</a>
+        <a href="#contact">Hubungi Kami</a>
     </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>Andi Irfan Maulana</h1>
-        <p>Sales Mobil Profesional Andalanta</p>
-    </header>
-
     <div class="container">
-        <!-- About Section -->
         <section id="about" class="about">
-            <img src="sales.jpg" alt="Andi Irfan Maulana">
+            <img src="foto3.jpg" alt="Foto Profil">
             <div>
-                <h2>Tentang Saya</h2>
-                <p>Selamat datang di profil saya! Saya Andi Irfan Maulana, seorang sales mobil dengan pengalaman lebih dari 10 tahun dalam industri otomotif. Saya berkomitmen untuk membantu Anda menemukan mobil impian Anda dan memberikan pelayanan terbaik.</p>
+                <h2>Tentang Kami</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula urna sit amet magna
+                    pretium, a commodo justo dictum. Aliquam erat volutpat. Mauris ac neque at ante cursus blandit
+                    non a nunc.</p>
             </div>
         </section>
 
-        <!-- Services Section -->
         <section id="services" class="services">
             <div class="service consult" style="background-image: url('sales2.jpg');">
-                <h3>Konsultasi Pembelian</h3>
-                <p>Saya akan membantu Anda memilih mobil yang sesuai dengan kebutuhan dan anggaran Anda.</p>
+                <h3>Konsultasi</h3>
+                <p>Kami menyediakan konsultasi yang mendalam untuk membantu Anda menemukan mobil yang tepat.</p>
             </div>
             <div class="service offer" style="background-image: url('penawaran.jpg');">
                 <h3>Penawaran Terbaik</h3>
-                <p>Saya menyediakan berbagai penawaran dan diskon eksklusif untuk pembelian mobil baru.</p>
+                <p>Dapatkan penawaran terbaik untuk mobil baru dan bekas dari kami.</p>
             </div>
             <div class="service test-drive" style="background-image: url('tes.jpg');">
                 <h3>Test Drive</h3>
-                <p>Rasakan langsung kenyamanan dan performa mobil pilihan Anda dengan layanan test drive kami.</p>
+                <p>Jadwalkan test drive dan rasakan pengalaman berkendara yang sebenarnya.</p>
             </div>
         </section>
 
-        <!-- Gallery Section -->
         <section id="gallery">
-            <h2>Galeri Promosi</h2>
+            <h2>Galeri</h2>
             <div class="gallery">
-                <img src="foto1.jpg" alt="Promo 1" data-caption="Promo 1 Description">
-                <img src="foto2.png" alt="Promo 2" data-caption="Promo 2 Description">
-                <img src="foto3.jpg" alt="Promo 3" data-caption="Promo 3 Description">
-                <img src="foto4.png" alt="Promo 4" data-caption="Promo 4 Description">
+                <img src="mobil1.jpg" alt="Mobil 1" onclick="openGallery(this)">
+                <img src="mobil2.jpg" alt="Mobil 2" onclick="openGallery(this)">
+                <img src="mobil3.jpg" alt="Mobil 3" onclick="openGallery(this)">
+                <!-- Tambahkan gambar lain sesuai kebutuhan -->
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="Kerjasama">
-            <h2>Kerjasama</h2>
         <section id="testimonials" class="testimonials">
             <div class="testimonial">
-                <p>"Kami bekerjasama dengan beberapa pihak pembiayaan."</p>
+                <p>"Layanan yang sangat profesional! Saya sangat puas dengan pembelian mobil saya."</p>
                 <div class="author-logos">
-                    <img src="bfi.jpeg" alt="BFI Logo">
-                    <img src="adira.png" alt="Adira Logo">
-                    <img src="mandiri.png.crdownload" alt="Mandiri Logo">
-                    <img src="oto.jpeg" alt="Oto Logo">
+                    <img src="logo1.png" alt="Logo Penulis">
                 </div>
+            </div>
+            <div class="testimonial">
+                <p>"Prosesnya sangat mudah dan cepat. Terima kasih atas bantuannya!"</p>
+                <div class="author-logos">
+                    <img src="logo2.png" alt="Logo Penulis">
+                </div>
+            </div>
+            <!-- Tambahkan testimonial lain sesuai kebutuhan -->
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="contact">
-            <h2>Hubungi Saya</h2>
-            <p>Saya siap membantu Anda. Jangan ragu untuk menghubungi saya untuk konsultasi atau pertanyaan lebih lanjut.</p>
+            <h2>Hubungi Kami</h2>
+            <p>Jika Anda memiliki pertanyaan atau ingin menjadwalkan konsultasi, silakan hubungi kami.</p>
             <div class="social">
-                <a href="https://wa.me/+6285345674445" target="_blank" title="Hubungi via WhatsApp">
-                    <img src="wa.png" alt="WhatsApp Logo">
-                </a>
-                <a href="https://instagram.com/andiirfanmaulana" target="_blank" title="Lihat Instagram">
-                    <img src="ig.png.crdownload" alt="Instagram Logo">
-                </a>
+                <a href="https://wa.me/1234567890" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://instagram.com/yourprofile" target="_blank"><img src="instagram.png" alt="Instagram"></a>
             </div>
-            <p>Alamat: Jln. Tamalanrea BTP , Kota Makassar</p>
-            <a href="https://www.google.com/maps/place/Jl.+Kesenangan+3,+Tamalanrea,+Kec.+Tamalanrea,+Kota+Makassar,+Sulawesi+Selatan+90245/@-5.1321812,119.4988383,17z/data=!3m1!4b1!4m6!3m5!1s0x2dbefcb1d60774cb:0x9e04f396881d124a!8m2!3d-5.1321812!4d119.5014132!16s%2Fg%2F1hm64_pkm?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Lihat di Google Maps">Lihat di Google Maps</a>
-            <!-- Embedding Google Maps -->
-            <iframe class="map" src="https://www.google.com/maps/place/Jl.+Kesenangan+3,+Tamalanrea,+Kec.+Tamalanrea,+Kota+Makassar,+Sulawesi+Selatan+90245/@-5.1321812,119.4988329,17z/data=!3m1!4b1!4m6!3m5!1s0x2dbefcb1d60774cb:0x9e04f396881d124a!8m2!3d-5.1321812!4d119.5014132!16s%2Fg%2F1hm64_pkm?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" allowfullscreen="" loading="lazy"></iframe>
+            <p>Alamat: Jl. Contoh No.123, Jakarta</p>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
         </section>
     </div>
 
+    <footer>
+        <p>&copy; 2024 Andi Irfan Maulana. Semua hak cipta dilindungi.</p>
+    </footer>
+
     <!-- Gallery Modal -->
-    <div class="gallery-item" id="gallery-item">
+    <div id="gallery-modal" class="gallery-item">
         <span class="close" onclick="closeGallery()">&times;</span>
-        <img id="modal-img" src="" alt="Expanded Image">
+        <img id="modal-img" src="" alt="Gallery Item">
         <div class="caption" id="modal-caption"></div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Andi Irfan Maulana. All Rights Reserved.</p>
-    </footer>
-
     <script>
-        document.querySelectorAll('.gallery img').forEach(img => {
-            img.addEventListener('click', function () {
-                const modal = document.getElementById('gallery-item');
-                const modalImg = document.getElementById('modal-img');
-                const modalCaption = document.getElementById('modal-caption');
-                
-                modal.style.display = 'flex';
-                modalImg.src = this.src;
-                modalCaption.textContent = this.dataset.caption;
-            });
-        });
+        function openGallery(img) {
+            var modal = document.getElementById('gallery-modal');
+            var modalImg = document.getElementById('modal-img');
+            var captionText = document.getElementById('modal-caption');
+            modal.style.display = 'flex';
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt;
+        }
 
         function closeGallery() {
-            document.getElementById('gallery-item').style.display = 'none';
+            var modal = document.getElementById('gallery-modal');
+            modal.style.display = 'none';
         }
+    </script>
+</body>
+
+</html>
